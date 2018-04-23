@@ -52,4 +52,4 @@ WORKDIR /var/www/html
 EXPOSE 80
 
 # Run app.py when the container launches
-CMD service apache2 start; service mysql start; sleep infinity
+CMD service apache2 start; service mysql start; bash
