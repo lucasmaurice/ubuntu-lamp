@@ -33,7 +33,7 @@ RUN usermod -d /var/lib/mysql/ mysql
 # Install phpmyadmin
 RUN service mysql start && \
     wget https://files.phpmyadmin.net/phpMyAdmin/4.8.0.1/phpMyAdmin-4.8.0.1-all-languages.tar.xz && \
-    mkdir /usr/share/phpmyadmin&& \
+    mkdir /usr/share/phpmyadmin && \
     tar xpvf phpMyAdmin-4.8.0.1-all-languages.tar.xz -C /usr/share/ && \
     mv /usr/share/phpMyAdmin-4.8.0.1-all-languages/* /usr/share/phpmyadmin && \
     rm phpMyAdmin-4.8.0.1-all-languages.tar.xz && \
